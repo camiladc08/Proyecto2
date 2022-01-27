@@ -1,0 +1,102 @@
+/* Selector universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: darkorchid;
+    text-align: center;
+}
+
+p {
+    background-color: dimgray;
+}
+
+.primer-parrafo {
+    color: cornsilk;
+}
+
+.inicio {
+    text-align: center;
+    font-style: normal;
+} 
+
+
+.primer-parrafo{
+    color: firebrick;
+    font-weight: 300;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+header nav ul li a {
+    text-decoration: forestgreen;
+}
+
+.inicio , .mis-servicios {
+    background-color: lime;
+}
+
+
+h1 , p {
+    background-color: maroon;
+}
+
+.inline {
+    color: mediumslateblue;
+}
+
+.parrafo {
+    color: orchid;
+    font-weight: 500;
+}
+
+
+/* Box Modeling */
+
+h1 {
+    padding: 40px 80px;
+
+border: 4px solid mediumorchid;
+
+margin: 30px;
+margin-bottom: 30px;
+}
+
+
+
+
+.linea-uno {
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255, 255, 255, .75);
+    font-size: 44px;
+    text-align: center;
+    /* white aline determina como se maneja el espacio en blanco 
+    dentro de un elemento */
+    white-space: nowrap;
+    /* hidden lo que haya fuera del contenedor no se vea ni se
+    genere un scroll */
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+
+.animacion-texto {
+    animation: maquinola 4s;
+}
+
+
+@keyframes maquinola {
+    from {
+        width: 0;
+        border-right-color:rgba(255, 255, 255, .75) ;
+
+    }
+    to {
+        width: 24em;
+        border-right-color: transparent;
+
+    }
+}
